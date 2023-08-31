@@ -1,0 +1,43 @@
+$anchor-tecla: 100px
+$anchor-tecla2: 40px
+html
+body
+    background: radial-gradient(#ffd53e, #ffd209)
+    background-size: cover
+    background-repeat: no-repeat
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+.piano
+    display: flex
+    height: $anchor-tecla*4
+    width: $anchor-tecla*7
+.key
+    height: $anchor-tecla * 2
+    width: $anchor-tecla
+    border: 1px solid black
+.white
+    --width: 100px
+    background-color: white
+    border: 1px solid black
+    border-radius: 5px
+.white:active
+    background-color: #ff0000
+.black
+    width: $anchor-tecla2
+    background-color: black
+    border: 1px solid black
+    border-radius: 5px
+.black:active
+    background-color: #8d0000
+.imagenes
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 1fr 1fr 1fr
+    width: 200px
+    height: 200px
+// .imagenes svg:nth-child(1)
+//     grid-row: 1 / -1
+//     grid-column: span 1

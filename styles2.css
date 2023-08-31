@@ -1,0 +1,52 @@
+body {
+  background: radial-gradient(#ffd53e, #ffd209);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.piano {
+  display: flex;
+  height: 400px;
+  width: 700px;
+}
+
+.key {
+  height: 200px;
+  width: 100px;
+  border: 1px solid black;
+}
+
+.white {
+  --width: 100px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.white:active {
+  background-color: #ff0000;
+}
+
+.black {
+  width: 40px;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.black:active {
+  background-color: #8d0000;
+}
+
+.imagenes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 200px;
+  height: 200px;
+}/*# sourceMappingURL=styles2.css.map */
